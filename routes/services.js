@@ -5,8 +5,9 @@ const Service = require('../models/Service');
 // Get all services
 router.get('/', async (req, res) => {
   try {
-    const services = await Service.find();
-    res.json(services);
+    res.json('Check Service');
+    //const services = await Service.find();
+    //res.json(services);
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
